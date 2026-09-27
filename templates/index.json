@@ -5,8 +5,8 @@
       "settings": {
         "image": "shopify://shop_images/Sd9f799327d014cc9910128d5b16fcc7bL.webp",
         "eyebrow": "Everyday jewellery",
-        "heading": "Steel that keeps its shine.",
-        "text": "<p>Chains, rings and hoops made for everyday wear. Waterproof, won't tarnish, built to layer.</p>",
+        "heading": "Keeps its shine. Every day.",
+        "text": "<p>Chains, rings and hoops made for everyday wear. Waterproof, tarnish-resistant, built to layer.</p>",
         "button_label": "Shop the collection",
         "button_link": "shopify://collections/all",
         "color_scheme": "scheme-3"
@@ -29,25 +29,17 @@
             "line": "Sweat won't turn it, or you, green."
           }
         },
-        "s3": {
-          "type": "step",
-          "settings": {
-            "word": "Sea",
-            "line": "Salt water, no drama."
-          }
-        },
         "s4": {
           "type": "step",
           "settings": {
             "word": "Every day",
-            "line": "Waterproof. Won't tarnish. Made to stay on."
+            "line": "Waterproof. Tarnish-resistant. Made to stay on."
           }
         }
       },
       "block_order": [
         "s1",
         "s2",
-        "s3",
         "s4"
       ],
       "settings": {
@@ -62,7 +54,7 @@
         "title": "Best sellers",
         "collection": "all",
         "link_label": "View all",
-        "products_to_show": 7,
+        "products_to_show": 5,
         "quick_add": "standard",
         "color_scheme": "scheme-1"
       }
