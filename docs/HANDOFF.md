@@ -146,6 +146,13 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
 - Adicionados à The edit (fim da lista): Lock Chain, Torque Collar, Triple Stack, Snake Chain Set. A vitrine da home segue com as 5 primeiras. As sugestões do carrinho usam a coleção inteira.
 - Seção "Sets & stacks" da home **continua desligada**: a coleção tem 1 produto só, e uma faixa com um card parece loja vazia. Religar quando houver 3 ou mais sets. O texto dela ("pay less than for each piece on its own") só vale se o set custar menos que as peças avulsas: conferir a cada set novo.
 
+## 6b4. Revisão de design (27/09)
+
+- Destaque dourado trocado por **aço** (#BCC6CD): botão da seção escura, eyebrow do hero, barras de progresso, detalhes. Motivo: a loja só vende peças na cor do aço e o dourado sugeria o contrário.
+- Seção de prova da home mais curta: altura = 1 + 0,6 × número de etapas (antes 1 por etapa). A palavra pequena repetida sob a palavra grande ficou só para leitor de tela.
+- Cards no estilo "standard": texto alinhado à borda da foto. Botões "Add to cart" alinhados na mesma linha, qualquer que seja o tamanho do título (`product-component` em flex, em `assets/flair.css`).
+- Checado em prévia local (Liquid e CSS reais, fotos de exemplo). A loja real e o CDN de fotos são bloqueados neste ambiente.
+
 ## 6c. Lei no Reino Unido — estado em 27/09
 
 Feito: devolução alinhada às Consumer Contracts Regulations (redução por uso em vez de recusa; reembolso em 14 dias do recebimento **ou da prova de envio**; menção ao Consumer Rights Act após 30 dias), brincos com a exceção de higiene correta (só se lacrados), valor do frete (£2.99) na página de produto, sem avaliações falsas, sem "Best sellers" sem base, sem promessas absolutas, sem "silver/925".

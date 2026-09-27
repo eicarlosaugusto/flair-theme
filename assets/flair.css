@@ -14,7 +14,7 @@
   --flair-ink: #111315;
   --flair-chalk: #f2f3f1;
   --flair-stone: #e3e5e3;
-  --flair-gold: #c9a45c;
+  --flair-steel: #bcc6cd;
   --flair-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
   --flair-condensed: 72%;
@@ -152,6 +152,13 @@ h1, h2, h3, h4, .h0, .h1, .h2, .h3, .hxl, .hxxl {
   .card-wrapper.is-centered .media.media--hover-effect > img:first-child:not(:only-child) { opacity: 0; }
 }
 .card-wrapper .quick-add__submit { font-size: 1.2rem; }
+/* Buttons sit on one line across a row, whatever the title length. */
+product-component:has(> .card-wrapper) { display: flex; flex-direction: column; height: 100%; }
+product-component > .card-wrapper { flex-grow: 1; }
+.grid__item:has(> product-component) { display: flex; flex-direction: column; }
+.grid__item > product-component { flex-grow: 1; }
+.card-wrapper .card--standard > .card__content { display: flex; flex-direction: column; flex-grow: 1; }
+.card-wrapper .card--standard > .card__content > .quick-add { margin-top: auto; }
 
 /* ---------- Home 1: opening ---------- */
 .flair-hero {
@@ -170,7 +177,7 @@ h1, h2, h3, h4, .h0, .h1, .h2, .h3, .hxl, .hxxl {
   align-items: end;
 }
 .flair-hero__copy { display: grid; gap: 2.4rem; justify-items: start; position: relative; z-index: 2; }
-.flair-hero__copy .flair-eyebrow { color: var(--flair-gold); }
+.flair-hero__copy .flair-eyebrow { color: var(--flair-steel); }
 .flair-hero__title {
   margin: 0;
   font-stretch: var(--flair-condensed);
@@ -271,6 +278,8 @@ h1, h2, h3, h4, .h0, .h1, .h2, .h3, .hxl, .hxxl {
 }
 .flair-proof__step { grid-area: 1 / 1; display: grid; gap: 0.8rem; }
 .flair-proof__step-word { font-size: 1.3rem; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.6; }
+/* The backdrop word already names the step; the small label stays for screen readers and the reduced list. */
+html:not(.fx-reduzido) .flair-proof__step-word { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .flair-proof__step-line {
   font-family: var(--font-heading-family);
   font-weight: 700;
@@ -290,7 +299,7 @@ h1, h2, h3, h4, .h0, .h1, .h2, .h3, .hxl, .hxxl {
 .flair-proof__meter span {
   display: block;
   height: 100%;
-  background: var(--flair-gold);
+  background: var(--flair-steel);
   transform-origin: left;
   transform: scaleX(var(--progresso, 0));
 }
@@ -489,7 +498,7 @@ a.flair-guarantees__title:hover { text-decoration: underline; text-underline-off
 /* Product trust list */
 .flair-trust { list-style: none; padding: 0; margin: 1.6rem 0 0; display: grid; gap: 0.8rem; font-size: 1.4rem; }
 .flair-trust li { display: flex; gap: 1rem; align-items: baseline; }
-.flair-trust li::before { content: ''; flex: 0 0 0.7rem; height: 0.7rem; transform: rotate(45deg) translateY(-1px); background: var(--flair-gold); }
+.flair-trust li::before { content: ''; flex: 0 0 0.7rem; height: 0.7rem; transform: rotate(45deg) translateY(-1px); background: var(--flair-steel); }
 
 /* ---------- Footer ---------- */
 .footer .footer-block__heading { font-family: var(--font-body-family); font-size: 1.3rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
@@ -514,7 +523,7 @@ a.flair-guarantees__title:hover { text-decoration: underline; text-underline-off
 .flair-ship { padding: 1.2rem 0 1.4rem; }
 .flair-ship__text { margin: 0 0 0.8rem; font-size: 1.4rem; }
 .flair-ship__track { height: 4px; background: rgba(var(--color-foreground), 0.12); overflow: hidden; }
-.flair-ship__track span { display: block; height: 100%; background: var(--flair-gold); transition: width 0.4s ease; }
+.flair-ship__track span { display: block; height: 100%; background: var(--flair-steel); transition: width 0.4s ease; }
 .drawer .flair-ship { padding-inline: 0; }
 
 .flair-eta { font-size: 1.4rem; margin: 1.2rem 0 0; }

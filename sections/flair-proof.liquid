@@ -5,7 +5,7 @@
 {%- liquid
   assign steps = section.blocks | where: 'type', 'step'
   assign step_count = steps.size | at_least: 1 | at_most: 5
-  assign scene_height = step_count | at_least: 2
+  assign scene_height = step_count | times: 0.6 | plus: 1 | at_least: 2
   assign piece = section.settings.product
   assign piece_image = section.settings.image | default: piece.featured_media.preview_image
 -%}

@@ -16,7 +16,7 @@
 | Ink | #111315 | Texto, botões, seção escura |
 | Chalk | #F2F3F1 | Fundo principal |
 | Stone | #E3E5E3 | Fundo secundário |
-| Gold | #C9A45C | Destaque (botão na seção escura, detalhes, newsletter) |
+| Steel | #BCC6CD | Destaque (botão na seção escura, detalhes, barras de progresso). Era dourado até 27/09; trocado porque a loja só vende peças na cor do aço e o dourado sugeria o contrário. |
 | Oxblood | #6E1F24 | Selo de promoção |
 
 ## Tipografia

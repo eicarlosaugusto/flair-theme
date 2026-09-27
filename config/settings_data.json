@@ -32,7 +32,7 @@
             "background": "#111315",
             "background_gradient": "",
             "text": "#F2F3F1",
-            "button": "#C9A45C",
+            "button": "#BCC6CD",
             "button_label": "#111315",
             "secondary_button_label": "#F2F3F1",
             "shadow": "#111315"
@@ -51,11 +51,11 @@
         },
         "scheme-5": {
           "settings": {
-            "background": "#C9A45C",
+            "background": "#BCC6CD",
             "background_gradient": "",
             "text": "#111315",
             "button": "#111315",
-            "button_label": "#C9A45C",
+            "button_label": "#BCC6CD",
             "secondary_button_label": "#111315",
             "shadow": "#111315"
           }
@@ -92,7 +92,7 @@
       "inputs_shadow_horizontal_offset": 0,
       "inputs_shadow_vertical_offset": 4,
       "inputs_shadow_blur": 5,
-      "card_style": "card",
+      "card_style": "standard",
       "card_image_padding": 0,
       "card_text_alignment": "left",
       "card_color_scheme": "scheme-1",
