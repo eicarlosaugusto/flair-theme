@@ -22,6 +22,7 @@
     {{ block.shopify_attributes }}
   >
     {%- for option in product.options_with_values -%}
+      {%- comment -%} Flair: an option with a single value is not a choice; keep its input for the variant match but hide it. {%- endcomment -%}
       {%- liquid
         assign swatch_count = option.values | map: 'swatch' | compact | size
         assign picker_type = block.settings.picker_type
@@ -35,7 +36,7 @@
         endif
       -%}
       {%- if picker_type == 'swatch' -%}
-        <fieldset class="js product-form__input product-form__input--swatch">
+        <fieldset class="js product-form__input product-form__input--swatch"{% if option.values.size == 1 %} hidden{% endif %}>
           <legend class="form__label">
             {{ option.name }}:
             <span data-selected-value>
@@ -50,7 +51,7 @@
           %}
         </fieldset>
       {%- elsif picker_type == 'button' -%}
-        <fieldset class="js product-form__input product-form__input--pill">
+        <fieldset class="js product-form__input product-form__input--pill"{% if option.values.size == 1 %} hidden{% endif %}>
           <legend class="form__label">{{ option.name }}</legend>
           {% render 'product-variant-options',
             product: product,
@@ -60,7 +61,7 @@
           %}
         </fieldset>
       {%- else -%}
-        <div class="product-form__input product-form__input--dropdown">
+        <div class="product-form__input product-form__input--dropdown"{% if option.values.size == 1 %} hidden{% endif %}>
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
             {{ option.name }}
           </label>

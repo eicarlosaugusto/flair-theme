@@ -156,6 +156,10 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
 - Card grande (primeiro da vitrine e da coleção) mantém o botão logo abaixo do preço. Rodapé no celular alinhado à margem da página.
 - Fotos: apagadas as pretas do Huggie (2), a dourada do Square Celtic Knot e 3 do Hollow Chain com texto impresso (incluía palavrão). Foto de capa trocada para uma sem marca d'água em Faceted Dome, Triple Stack, Sculpted, Torque, Shell Inlay, Narrow Band, Rolo, Open Cuff, Cross e Witch Knot (as com marca foram para o fim).
 - Medidas tiradas das fotos do fornecedor: Lock Chain colar 45cm, Rolo Choker 40cm. Já nas descrições.
+- Opções dos produtos limpas (antes vinham com o texto do fornecedor: "Main Stone Color: As shown", "R1283-Texture", "PaperclinChain"...). Nomes claros (Size (US), Length, Width, Diameter, Stone, Style, Type, Chain, Pattern, Finish) e valores em ordem crescente. Só nome e ordem mudaram: os IDs das variantes são os mesmos, então o DSers segue mapeado.
+- Opção com um só valor (ex.: "Finish: Steel") fica escondida na página de produto (`snippets/product-variant-picker.liquid`), mas continua no carrinho e no pedido.
+- Cross Pendant: valores "02S / 01S / Steel color" sem significado claro no fornecedor. Conferir no DSers qual é qual e renomear.
+- Import novo: renomear opções e ordenar tamanhos antes de publicar.
 - **Crown Ring with Green Stone tem detalhes dourados em todas as fotos** (peça bicolor). Contraria a regra "só cor do aço": decidir se sai.
 
 ## 6c. Lei no Reino Unido — estado em 27/09
