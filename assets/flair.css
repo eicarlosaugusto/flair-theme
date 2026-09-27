@@ -155,6 +155,9 @@ h1, h2, h3, h4, .h0, .h1, .h2, .h3, .hxl, .hxxl {
 /* Buttons sit on one line across a row, whatever the title length. */
 product-component:has(> .card-wrapper) { display: flex; flex-direction: column; height: 100%; }
 product-component > .card-wrapper { flex-grow: 1; }
+/* Tall hero cards (first in the showcase and in a collection) keep the button under the price. */
+.flair-showcase__item:first-child .card--standard > .card__content > .quick-add,
+#product-grid > .grid__item:first-child .card--standard > .card__content > .quick-add { margin-top: 0; }
 .grid__item:has(> product-component) { display: flex; flex-direction: column; }
 .grid__item > product-component { flex-grow: 1; }
 .card-wrapper .card--standard > .card__content { display: flex; flex-direction: column; flex-grow: 1; }
@@ -471,7 +474,7 @@ a.flair-guarantees__title:hover { text-decoration: underline; text-underline-off
   opacity: 0.6;
   font-variant-numeric: tabular-nums;
 }
-/* Broken rhythm: one large piece opens every block of six (alternating sides) */
+/* One large piece opens the collection; the rest stay a regular grid so prices compare at a glance. */
 @media screen and (min-width: 990px) {
   #product-grid.grid--3-col-desktop {
     display: grid;
@@ -481,8 +484,7 @@ a.flair-guarantees__title:hover { text-decoration: underline; text-underline-off
     row-gap: 4rem;
   }
   #product-grid.grid--3-col-desktop > .grid__item { width: auto; max-width: none; }
-  #product-grid.grid--3-col-desktop > .grid__item:nth-child(12n + 1) { grid-column: 1 / span 2; grid-row: span 2; }
-  #product-grid.grid--3-col-desktop > .grid__item:nth-child(12n + 7) { grid-column: 2 / span 2; grid-row: span 2; }
+  #product-grid.grid--3-col-desktop > .grid__item:first-child { grid-column: 1 / span 2; grid-row: span 2; }
 }
 
 /* ---------- Product page ---------- */
@@ -550,3 +552,8 @@ a.flair-guarantees__title:hover { text-decoration: underline; text-underline-off
 }
 .flair-editor [data-fx] { opacity: 1 !important; transform: none !important; }
 .flair-editor [data-fx='palavras'] .fx-palavra { opacity: 1; transform: none; }
+
+/* Footer lines up with the page gutter on phones (Dawn pads it 4rem). */
+@media screen and (max-width: 749px) {
+  .footer__content-top { padding-left: 1.5rem; padding-right: 1.5rem; }
+}

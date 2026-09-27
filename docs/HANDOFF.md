@@ -151,7 +151,12 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
 - Destaque dourado trocado por **aço** (#BCC6CD): botão da seção escura, eyebrow do hero, barras de progresso, detalhes. Motivo: a loja só vende peças na cor do aço e o dourado sugeria o contrário.
 - Seção de prova da home mais curta: altura = 1 + 0,6 × número de etapas (antes 1 por etapa). A palavra pequena repetida sob a palavra grande ficou só para leitor de tela.
 - Cards no estilo "standard": texto alinhado à borda da foto. Botões "Add to cart" alinhados na mesma linha, qualquer que seja o tamanho do título (`product-component` em flex, em `assets/flair.css`).
-- Checado em prévia local (Liquid e CSS reais, fotos de exemplo). A loja real e o CDN de fotos são bloqueados neste ambiente.
+- Rede liberada (flairstudio.co.uk e cdn.shopify.com no ambiente "Default"). Prints reais tirados com o Chromium do ambiente; o CA do proxy foi posto no NSS (`certutil -A -n ccr-agent-proxy`).
+- Coleção: só o primeiro produto é grande; o resto é grade regular (antes um a cada seis ficava grande e ampliava foto ruim de fornecedor).
+- Card grande (primeiro da vitrine e da coleção) mantém o botão logo abaixo do preço. Rodapé no celular alinhado à margem da página.
+- Fotos: apagadas as pretas do Huggie (2), a dourada do Square Celtic Knot e 3 do Hollow Chain com texto impresso (incluía palavrão). Foto de capa trocada para uma sem marca d'água em Faceted Dome, Triple Stack, Sculpted, Torque, Shell Inlay, Narrow Band, Rolo, Open Cuff, Cross e Witch Knot (as com marca foram para o fim).
+- Medidas tiradas das fotos do fornecedor: Lock Chain colar 45cm, Rolo Choker 40cm. Já nas descrições.
+- **Crown Ring with Green Stone tem detalhes dourados em todas as fotos** (peça bicolor). Contraria a regra "só cor do aço": decidir se sai.
 
 ## 6c. Lei no Reino Unido — estado em 27/09
 
