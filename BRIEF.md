@@ -9,7 +9,9 @@ Restrições fixas: manter 100% dos produtos, tags, coleções, links de checkou
 - **Origem do tráfego:** Instagram Ads e TikTok Ads → visita majoritariamente no celular, vinda de vídeo curto, muitas vezes caindo direto em produto ou coleção.
 
 ## 2. Vibe
-_(pendente)_
+- **Palavras:** cru, metálico, noturno, confiante — com um toque de sofisticado.
+- **Desejo:** a peça tem que parecer algo que a pessoa quer e deseja, não só compra.
+- **Referências fora de sites (propostas, a confirmar):** estacionamento de Londres à noite (luz dura sobre metal), capa da revista *i-D*, clipe do Skepta; e, para o toque sofisticado, a embalagem/loja da Byredo.
 
 ## 3. Caminho do visitante
 _(pendente)_
