@@ -46,7 +46,7 @@
           "settings": {
             "heading": "Delivery",
             "icon": "truck",
-            "content": "<p>We ship to UK addresses with tracking on every order. You get the tracking link by email as soon as your order is dispatched, and the estimated delivery window is shown at checkout.</p><p><a href=\"/policies/shipping-policy\">Read the delivery policy</a></p>",
+            "content": "<p>We ship to UK addresses with tracking on every order. You get the tracking link by email as soon as your order is dispatched, and the estimated delivery window is shown at checkout.</p><p><a href=\"/pages/delivery\">Read the delivery policy</a></p>",
             "page": ""
           }
         },
@@ -55,7 +55,7 @@
           "settings": {
             "heading": "Returns",
             "icon": "return",
-            "content": "<p>Changed your mind? Tell us within 14 days of delivery and send the item back unworn in its original packaging for a refund. For hygiene reasons, pierced earrings can't be returned once taken out of their sealed packaging, unless they are faulty.</p><p><a href=\"/policies/refund-policy\">Read the full returns policy</a></p>",
+            "content": "<p>Changed your mind? Tell us within 14 days of delivery and send the item back unworn in its original packaging for a refund. For hygiene reasons, pierced earrings can't be returned once taken out of their sealed packaging, unless they are faulty.</p><p><a href=\"/pages/returns\">Read the full returns policy</a></p>",
             "page": ""
           }
         },

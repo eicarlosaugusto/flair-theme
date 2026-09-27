@@ -78,7 +78,7 @@
             "title": "14-day returns",
             "text": "<p>Changed your mind? Send it back within 14 days of delivery.</p>",
             "link_label": "Returns policy",
-            "link": "shopify://policies/refund-policy"
+            "link": "shopify://pages/returns"
           }
         }
       },
