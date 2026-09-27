@@ -23,8 +23,9 @@ Aprovado: seguir a proposta.
 2. Prova: água, suor e o dia a dia, sem escurecer (o desejo vira confiança).
 3. Vitrine: mais vendidos em grid assimétrico, uma peça grande e as outras em volta.
 4. Por categoria: Necklaces, Rings e Earrings (coleções e tags atuais, sem mudança).
-5. Na pele: fotos das peças sendo usadas, pegada streetwear.
-6. Garantias: frete rastreado para todo o UK, devolução, preço com VAT incluso.
+5. ~~Na pele~~ — **removida** (exigiria sessão de fotos/IA que não existe).
+5. Garantias: frete rastreado para todo o UK, devolução, preço com VAT incluso.
+6. Por categoria entra depois das garantias, como lista tipográfica grande (ver pergunta 5).
 7. Fechamento: uma chamada só, levando para a loja.
 
 **Página de produto** (onde cai boa parte do tráfego de anúncio): galeria grande → preço e comprar → promessas (à prova d'água, não escurece) → detalhes e combinações.
@@ -54,15 +55,20 @@ Motivo: é o que separa a Flair das outras (Hatton Labs e Vitaly vendem desejo; 
 | 1. Abertura noturna | Alta |
 | 2. Prova (água, suor, dia a dia) | **PICO** — seção presa na tela, rolagem longa |
 | 3. Vitrine assimétrica | Média |
-| 4. Por categoria | Calma |
-| 5. Na pele | Média-alta (trilho lateral) |
-| 6. Garantias | Calma |
-| 7. Fechamento | Média, uma chamada só |
+| 4. Garantias | Calma |
+| 5. Por categoria (lista tipográfica grande, foto aparece no toque/hover) | Média-alta |
+| 6. Fechamento | Calma, uma chamada só |
+
+Revisão: cena "Na pele" removida. Categorias trocou de lugar com Garantias e ganhou tratamento editorial para não haver duas cenas calmas vizinhas.
 
 Cenas vizinhas nunca repetem a mesma energia.
 
 ## 6. O que só essa página faz (movimento-assinatura)
-_(pendente)_
+Proposta: **"O brilho que segue você"** — reflexo de luz passando pelo metal, acompanhando dedo/mouse; no pico, o mesmo reflexo atravessa água e suor.
+
+Preocupação da pessoa: produtos entram pela DSers a qualquer momento, com fotos variadas; não dá para tratar imagem por imagem.
+Resposta técnica: o reflexo é uma camada de CSS por cima da foto (faixa de luz com `mix-blend-mode`), aplicada automaticamente em qualquer imagem de produto — zero tratamento de imagem, funciona com produto novo no dia em que entra. Em fundo branco quase não aparece; em metal, aparece como brilho. Intensidade baixa, desligável no editor do tema, respeita movimento-reduzido.
+_(aguardando aprovação)_
 
 ## 7. Materiais que já existem
 _(pendente)_
