@@ -14,7 +14,24 @@ Restrições fixas: manter 100% dos produtos, tags, coleções, links de checkou
 - **Referências fora de sites (propostas, a confirmar):** estacionamento de Londres à noite (luz dura sobre metal), capa da revista *i-D*, clipe do Skepta; e, para o toque sofisticado, a embalagem/loja da Byredo.
 
 ## 3. Caminho do visitante
-_(pendente)_
+Aprovado: seguir a proposta.
+
+**Home**
+1. Abertura noturna: uma peça brilhando no escuro, com a frase "Steel that keeps its shine".
+2. Prova: água, suor e o dia a dia, sem escurecer (o desejo vira confiança).
+3. Vitrine: mais vendidos em grid assimétrico, uma peça grande e as outras em volta.
+4. Por categoria: Necklaces, Rings e Earrings (coleções e tags atuais, sem mudança).
+5. Na pele: fotos das peças sendo usadas, pegada streetwear.
+6. Garantias: frete rastreado para todo o UK, devolução, preço com VAT incluso.
+7. Fechamento: uma chamada só, levando para a loja.
+
+**Página de produto** (onde cai boa parte do tráfego de anúncio): galeria grande → preço e comprar → promessas (à prova d'água, não escurece) → detalhes e combinações.
+
+**Leitura de referências (lojas do mesmo território)**
+- **Vitaly** (Toronto, aço, genderless, forte no TikTok): vende o aço como "engenharia" — tarnishproof, waterproof, garantia. Promessa técnica curta, repetida. → Flair já tem a promessa; ela precisa aparecer como *prova visual*, não como parágrafo.
+- **Hatton Labs** (Londres, streetwear, vendida em End./SSENSE/Selfridges): britanicidade + cultura pop; imagem de campanha editorial, peça em pele e roupa real. → cena "Na pele" é onde a Flair ganha o desejo.
+- **Missoma / Mejuri**: vitrine limpa, segunda foto no hover, página contando como a peça é feita. → no celular não existe hover: a troca de foto precisa funcionar por toque/deslize.
+- **Padrão comum de mercado:** grid simétrico de 4 colunas, fundo branco, banner com texto centralizado — é exatamente o que tira a cara de "template"; a Flair deve fugir disso na home e manter a clareza no produto.
 
 ## 4. O que ele precisa acreditar no final
 _(pendente)_
