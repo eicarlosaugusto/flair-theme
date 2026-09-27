@@ -3,6 +3,8 @@
 Entrevista da skill `sites-incriveis` (respostas como a pessoa falou).
 Restrições fixas: manter 100% dos produtos, tags, coleções, links de checkout da Shopify e navegação existentes.
 
+**Escopo:** não é uma landing page que joga para a loja. É o **tema Shopify inteiro** redesenhado — home, coleção, produto, carrinho, header/footer — como um site bem feito e atrativo. Os princípios da skill (jornada em cenas, um pico, movimento-assinatura, anti-template) valem para o site todo; as animações de rolagem entram onde ajudam a vender, sem atrapalhar navegação e compra.
+
 ## 1. O que é isso e pra quem é?
 - **Negócio:** Flair Studio vende joias de aço unissex com pegada streetwear: duráveis, à prova d'água e que não escurecem.
 - **Visitante:** jovem do Reino Unido, homem ou mulher, entre 18 e 30 anos, que usa streetwear e quer peças que aguentem o dia a dia sem ficar verdes nem perder o brilho, por um preço acessível.
@@ -34,7 +36,14 @@ Aprovado: seguir a proposta.
 - **Padrão comum de mercado:** grid simétrico de 4 colunas, fundo branco, banner com texto centralizado — é exatamente o que tira a cara de "template"; a Flair deve fugir disso na home e manter a clareza no produto.
 
 ## 4. O que ele precisa acreditar no final
-_(pendente)_
+As três convicções, fundidas em uma frase:
+
+> **"Tem cara de marca cara, cabe no meu bolso, e eu nunca vou precisar tirar — é a minha assinatura."**
+
+- Desejo (cara de marca cara) → direção de arte, tipografia, fotografia.
+- Acessível (cabe no bolso) → preço visível e sem vergonha, frete grátis acima de £35.
+- Durável (nunca tirar) → prova visual: água, suor, dia a dia.
+- Assinatura (identidade) → peça na pele, styling streetwear.
 
 ## 5. Energia e o pico
 _(pendente)_
