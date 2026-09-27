@@ -48,3 +48,39 @@ h1, h2, h3, .h0, .h1, .h2, .hxl, .hxxl { letter-spacing: -0.02em; text-wrap: bal
 .flair-trust { list-style: none; padding: 0; margin: 1.6rem 0 0; display: grid; gap: .8rem; font-size: 1.4rem; }
 .flair-trust li { display: flex; gap: 1rem; align-items: baseline; }
 .flair-trust li::before { content: ""; flex: 0 0 .7rem; height: .7rem; transform: rotate(45deg) translateY(-1px); background: var(--flair-gold); }
+
+/* ---- Design pass 2 ---- */
+/* Section titles: tighter, heavier */
+.title, .collection-list-title, .multicolumn .title { letter-spacing: -0.02em; }
+.title-wrapper-with-link { align-items: baseline; }
+
+/* Diferenciais: gold rule above each column */
+.multicolumn-card__info { padding-top: 1.6rem !important; border-top: 2px solid var(--flair-gold); }
+.multicolumn-card__info h3 { font-size: 1.8rem; letter-spacing: -0.01em; }
+.multicolumn .multicolumn-card { background: transparent; }
+
+/* Product cards: calm, consistent */
+.card__heading { font-family: var(--font-body-family); font-weight: 600; font-size: 1.5rem; letter-spacing: 0; }
+.card-information .price { font-size: 1.5rem; }
+.card--card, .card--card .card__inner { border-radius: 0; }
+.card__media .media img { transition: transform .5s ease; }
+.card-wrapper:hover .card__media .media img { transform: scale(1.03); }
+
+/* Collection tiles: title over a dark gradient */
+.collection-card-wrapper .card__heading { font-family: var(--font-heading-family); font-weight: 700; font-size: 2rem; }
+
+/* Hero */
+.image-with-text .image-with-text__heading { line-height: 1; }
+.image-with-text .caption-with-letter-spacing { color: var(--flair-gold); }
+
+/* Footer */
+.footer .footer-block__heading { font-family: var(--font-heading-family); letter-spacing: .02em; }
+.footer-block__details-content .list-menu__item--link { opacity: .8; }
+.footer-block__details-content .list-menu__item--link:hover { opacity: 1; }
+
+/* Announcement bar */
+.announcement-bar__message { letter-spacing: .12em; text-transform: uppercase; font-size: 1.2rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .card-wrapper:hover .card__media .media img { transform: none; }
+}
