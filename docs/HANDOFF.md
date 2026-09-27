@@ -143,7 +143,8 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
 - Lock Chain colar: comprimento não informado pelo fornecedor. Conferir no DSers e pôr na descrição.
 - Rolo Choker: o fornecedor tem "necklace 1" e "necklace 2" sem explicar a diferença. Conferir antes de anunciar.
 - Posição nas coleções manuais: novas peças logo depois das Core antigas, antes da Relic.
-- Snake Chain Set tem a tag `set`. A seção "sets" da home continua desligada até o Carlos decidir.
+- Adicionados à The edit (fim da lista): Lock Chain, Torque Collar, Triple Stack, Snake Chain Set. A vitrine da home segue com as 5 primeiras. As sugestões do carrinho usam a coleção inteira.
+- Seção "Sets & stacks" da home **continua desligada**: a coleção tem 1 produto só, e uma faixa com um card parece loja vazia. Religar quando houver 3 ou mais sets. O texto dela ("pay less than for each piece on its own") só vale se o set custar menos que as peças avulsas: conferir a cada set novo.
 
 ## 6c. Lei no Reino Unido — estado em 27/09
 
