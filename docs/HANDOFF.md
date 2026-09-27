@@ -82,6 +82,15 @@ Custo AliExpress aproximado por peça. Confirmar no DSers antes de repreçar.
 | Statement Hoop Earrings 30–60mm | £28.99 | £3.51–4.45 | £12.60 (43%) | +£4.60 (16%) |
 | Faceted Dome Ring 6mm | £23.99 | £1.23 | £12.40 (52%) | +£4.40 (18%) |
 | Hollow Chain Ring | £27.99 | £3.99 | £12.38 (44%) | +£4.38 (16%) |
+| Snake Chain Set (colar + pulseira) 3mm | £22.99 | ver DSers | | |
+| Triple Stack Ring | £26.99 | ver DSers | | |
+| Sculpted Ring | £27.99 | ver DSers | | |
+| Open Cuff Bangle | £30.99 | ver DSers | | |
+| Torque Collar Necklace | £30.99 | ver DSers | | |
+| Shell Inlay Band Ring | £30.99 | ver DSers | | |
+| Narrow Band Ring | £30.99 | ver DSers | | |
+| Lock Chain — colar / pulseira | £38.99 / £32.99 | ver DSers | | |
+| Rolo Chain Choker with Iced Lock | £34.99 | ver DSers | | |
 
 Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8 fica positivo. Esse é o motivo do frete grátis em £35.
 
@@ -126,6 +135,15 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
 - Menu principal sem "Contact" (quebrava em duas linhas no desktop); Contact segue no rodapé.
 - Medusa: só publicar se não lembrar o medalhão da Versace (borda grega).
 - As descrições da Relic foram escritas a partir do título do fornecedor, sem ver as fotos. Conferir se batem.
+
+## 6b3. Lote 3 de imports (27/09)
+
+- 9 produtos Core publicados (preços na tabela da seção 3, pela fórmula). Variações douradas apagadas; 13 fotos removidas pelo Carlos (t7, u2, u6, b8, b10, l3–l6, l8, l10, n4, n6); alt text em todas as fotos.
+- "White Opal" do fornecedor é madrepérola/concha: título **Shell Inlay Band Ring**, sem falar em opala.
+- Lock Chain colar: comprimento não informado pelo fornecedor. Conferir no DSers e pôr na descrição.
+- Rolo Choker: o fornecedor tem "necklace 1" e "necklace 2" sem explicar a diferença. Conferir antes de anunciar.
+- Posição nas coleções manuais: novas peças logo depois das Core antigas, antes da Relic.
+- Snake Chain Set tem a tag `set`. A seção "sets" da home continua desligada até o Carlos decidir.
 
 ## 6c. Lei no Reino Unido — estado em 27/09
 
