@@ -46,7 +46,20 @@ As três convicções, fundidas em uma frase:
 - Assinatura (identidade) → peça na pele, styling streetwear.
 
 ## 5. Energia e o pico
-_(pendente)_
+Decisão: seguir a recomendação — **pico = A. A prova.**
+Motivo: é o que separa a Flair das outras (Hatton Labs e Vitaly vendem desejo; a prova de que não escurece é a promessa da marca) e não depende de fotos que talvez ainda não existam.
+
+| Cena | Energia |
+|---|---|
+| 1. Abertura noturna | Alta |
+| 2. Prova (água, suor, dia a dia) | **PICO** — seção presa na tela, rolagem longa |
+| 3. Vitrine assimétrica | Média |
+| 4. Por categoria | Calma |
+| 5. Na pele | Média-alta (trilho lateral) |
+| 6. Garantias | Calma |
+| 7. Fechamento | Média, uma chamada só |
+
+Cenas vizinhas nunca repetem a mesma energia.
 
 ## 6. O que só essa página faz (movimento-assinatura)
 _(pendente)_
