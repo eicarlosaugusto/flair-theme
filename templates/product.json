@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title"
         },
@@ -41,16 +34,52 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "trust": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<ul class=\"flair-trust\">\n  <li>Stainless steel. Won't rust or turn your skin green.</li>\n  <li>Tracked delivery to UK addresses.</li>\n  <li>14-day returns from the day it arrives.</li>\n</ul>"
+          }
+        },
+        "tab_delivery": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Delivery",
+            "icon": "truck",
+            "content": "<p>We ship to UK addresses with tracking on every order. You get the tracking link by email as soon as your order is dispatched, and the estimated delivery window is shown at checkout.</p>",
+            "page": ""
+          }
+        },
+        "tab_returns": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Returns",
+            "icon": "return",
+            "content": "<p>You can return any item within 14 days of delivery for a refund. Items must be unworn and in their original packaging. For hygiene reasons, pierced earrings can only be returned if they are faulty.</p>",
+            "page": ""
+          }
+        },
+        "tab_care": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care",
+            "icon": "check_mark",
+            "content": "<p>Stainless steel is made for everyday wear, water included. To keep the shine, wipe it with a soft cloth and keep it away from bleach and chlorine.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "trust",
         "description",
+        "tab_delivery",
+        "tab_returns",
+        "tab_care",
         "share"
       ],
       "settings": {
