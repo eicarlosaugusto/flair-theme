@@ -115,6 +115,14 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
 - Descrições dizem "Finish: silver tone, the natural colour of the steel". Import novo: apagar variações coloridas e checar as fotos antes de publicar.
 - Imports de 27/09: 7 publicados (pulseiras snake 2–4mm e 6mm, emperor 10mm, Möbius cuff, argolas 30–60mm, anel domo facetado, anel corrente). 18 em DRAFT por estilo (Viking/celta/turco, religiosos, Medusa, lobo), alegação de saúde ("anti anxiety"), opções sem descrição (A/B/C, 35 "styles") ou pulseira PVD dourada.
 
+## 6b2. Linha Relic (27/09)
+
+- Decisão do Carlos: a marca acolhe o estilo statement. Duas linhas: **Core** (minimalista) e **Relic** (entalhado, celta/nórdico, animais, pedras). Regras no `BRAND.md`.
+- Coleção `relic` (automática pela tag `relic`). 14 produtos preparados (11 statement + 3 religiosos que ficam à venda mas **não entram em anúncio**): título, descrição, SEO, tags e preço pela fórmula (£24.99–£32.99). Em DRAFT até o Carlos revisar as fotos.
+- Apagados a pedido: anel "anti anxiety", argolas ZS (A/B/C) e anel com 35 "styles".
+- Medusa: só publicar se não lembrar o medalhão da Versace (borda grega).
+- As descrições da Relic foram escritas a partir do título do fornecedor, sem ver as fotos. Conferir se batem.
+
 ## 6c. Lei no Reino Unido — estado em 27/09
 
 Feito: devolução alinhada às Consumer Contracts Regulations (redução por uso em vez de recusa; reembolso em 14 dias do recebimento **ou da prova de envio**; menção ao Consumer Rights Act após 30 dias), brincos com a exceção de higiene correta (só se lacrados), valor do frete (£2.99) na página de produto, sem avaliações falsas, sem "Best sellers" sem base, sem promessas absolutas, sem "silver/925".

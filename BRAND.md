@@ -4,6 +4,12 @@
 **Frase:** Steel that keeps its shine.
 **Tom:** não usar "stainless steel" em títulos, chamadas e anúncios. Falar em durável, à prova d'água, não escurece. O material aparece só na ficha técnica do produto.
 
+## Linhas
+- **Core**: minimalista e geométrico. Correntes, argolas, bandas lisas, cuffs. É a cara da home e dos anúncios principais.
+- **Relic** (desde 27/09): a linha statement. Anéis entalhados, nós celtas e nórdicos, motivos de animal e mitologia, anéis com pedra. Mesma regra de material e cor: só aço na cor natural (pedras coloridas são permitidas; banho dourado, rosé ou preto não). Tom de texto: peso, história, "carved", sem misticismo nem promessa de proteção/sorte.
+- Símbolos religiosos (cruz, coroa de espinhos, Virgem Maria/pentagrama) ficam **à venda na linha Relic, mas não entram em anúncios**. Texto neutro e descritivo, sem prometer proteção.
+- Fora da loja: alegações de saúde ("anti anxiety") e cópias de logotipos de marcas (ex.: medalhão Medusa com borda grega, que lembra Versace).
+
 ## Cores
 | Nome | Hex | Uso |
 |---|---|---|
@@ -26,4 +32,4 @@
 - Só vender peças de **aço inoxidável** (a promessa da loja depende disso).
 - Só usar fornecedor com **envio rastreado** para o Reino Unido.
 - Preço sempre com VAT incluso. Prazo de entrega honesto, nunca subestimado.
-- Tags de produto que alimentam as coleções: `necklace`, `ring`, `bracelet`, `earrings`, `set`.
+- Tags de produto que alimentam as coleções: `necklace`, `ring`, `bracelet`, `earrings`, `set`, e `relic` para a linha Relic.
