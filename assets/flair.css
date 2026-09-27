@@ -215,7 +215,7 @@ h1, h2, h3, h4, .h0, .h1, .h2, .h3, .hxl, .hxxl {
 }
 .flair-proof[data-etapa='1'] .flair-proof__stage { --tone: #0e1418; }
 .flair-proof[data-etapa='2'] .flair-proof__stage { --tone: #16130f; }
-.flair-proof[data-etapa='3'] .flair-proof__stage,
+.flair-proof[data-etapa='3'] .flair-proof__stage { --tone: #101419; }
 .flair-proof[data-etapa='4'] .flair-proof__stage,
 .flair-proof[data-etapa='5'] .flair-proof__stage { --tone: #111315; }
 

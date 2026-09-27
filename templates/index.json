@@ -35,11 +35,19 @@
             "word": "Every day",
             "line": "Waterproof. Tarnish-resistant. Made to stay on."
           }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "word": "Rain",
+            "line": "British weather, handled."
+          }
         }
       },
       "block_order": [
         "s1",
         "s2",
+        "s3",
         "s4"
       ],
       "settings": {
