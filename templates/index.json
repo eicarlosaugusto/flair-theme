@@ -60,7 +60,7 @@
       "type": "flair-showcase",
       "settings": {
         "title": "The edit",
-        "collection": "all",
+        "collection": "the-edit",
         "link_label": "View all",
         "products_to_show": 5,
         "quick_add": "standard",

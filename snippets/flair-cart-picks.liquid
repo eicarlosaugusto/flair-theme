@@ -1,6 +1,6 @@
 {%- comment -%}
   Cart drawer: while the cart is under the free delivery threshold, suggest up to
-  three pieces not already in it. Links go to the product page so the shopper
+  three pieces from The edit (Core line, never Relic) not already in it. Links go to the product page so the shopper
   picks the right length, size or colour.
 {%- endcomment -%}
 {%- assign flair_threshold = 3500 -%}
@@ -8,7 +8,7 @@
   {%- assign in_cart = cart.items | map: 'product_id' | join: ',' | prepend: ',' | append: ',' -%}
   {%- assign shown = 0 -%}
   {%- capture picks -%}
-    {%- for product in collections['all'].products -%}
+    {%- for product in collections['the-edit'].products -%}
       {%- if shown >= 3 -%}{%- break -%}{%- endif -%}
       {%- assign key = ',' | append: product.id | append: ',' -%}
       {%- if in_cart contains key or product.available == false -%}{%- continue -%}{%- endif -%}

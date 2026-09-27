@@ -120,6 +120,8 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
 - Decisão do Carlos: a marca acolhe o estilo statement. Duas linhas: **Core** (minimalista) e **Relic** (entalhado, celta/nórdico, animais, pedras). Regras no `BRAND.md`.
 - Coleção `relic` (automática pela tag `relic`). 14 produtos preparados (11 statement + 3 religiosos que ficam à venda mas **não entram em anúncio**): título, descrição, SEO, tags e preço pela fórmula (£24.99–£32.99). Em DRAFT até o Carlos revisar as fotos.
 - Apagados a pedido: anel "anti anxiety", argolas ZS (A/B/C) e anel com 35 "styles".
+- 27/09: fotos revisadas pelo Carlos, 14 publicados. Relic no menu principal.
+- Coleção manual **The edit** (`the-edit`) só com peças Core: alimenta a vitrine da home e as sugestões do carrinho, para Relic e religiosos não aparecerem ali. Ao lançar peça Core de destaque, adicionar nela.
 - Medusa: só publicar se não lembrar o medalhão da Versace (borda grega).
 - As descrições da Relic foram escritas a partir do título do fornecedor, sem ver as fotos. Conferir se batem.
 
