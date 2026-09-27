@@ -1466,5 +1466,21 @@
         "label": "t:settings_schema.customer_accounts.settings.customer_account_menu.label"
       }
     ]
+  },
+  {
+    "name": "Flair",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Signature"
+      },
+      {
+        "type": "checkbox",
+        "id": "flair_shine",
+        "label": "Shine on product images",
+        "info": "A soft band of light follows the finger or cursor across product photos. Turned off automatically for visitors who prefer reduced motion.",
+        "default": true
+      }
+    ]
   }
 ]

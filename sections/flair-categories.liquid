@@ -1,0 +1,77 @@
+{%- comment -%}
+  Flair: shop by piece as a type index. Big names, left-anchored; the photo of
+  each collection follows the cursor on desktop and sits beside the name on touch.
+{%- endcomment -%}
+<section class="flair-index color-{{ section.settings.color_scheme }}" aria-labelledby="FlairIndex-{{ section.id }}">
+  <div class="page-width">
+    <h2 id="FlairIndex-{{ section.id }}" class="flair-eyebrow flair-index__label">{{ section.settings.title | escape }}</h2>
+    <ul class="flair-index__list" role="list">
+      {%- for block in section.blocks -%}
+        {%- assign collection = block.settings.collection -%}
+        {%- if collection == blank -%}{%- continue -%}{%- endif -%}
+        {%- assign cover = collection.featured_image | default: collection.products.first.featured_media.preview_image -%}
+        <li class="flair-index__row" data-fx="esquerda" data-fx-atraso="{{ forloop.index0 | times: 120 }}" {{ block.shopify_attributes }}>
+          <a class="flair-index__link" href="{{ collection.url }}">
+            <span class="flair-index__name flair-display">{{ collection.title | escape }}</span>
+            <span class="flair-index__count">{{ collection.products_count }}</span>
+            {%- if cover != blank -%}
+              <span class="flair-index__thumb flair-plate" aria-hidden="true">
+                {{ cover | image_url: width: 600 | image_tag: loading: 'lazy', sizes: '(min-width: 990px) 22vw, 22vw', widths: '200, 400, 600', alt: '' }}
+              </span>
+            {%- endif -%}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var list = document.currentScript.previousElementSibling.querySelector('.flair-index__list');
+    if (!list || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    list.addEventListener('pointermove', function (e) {
+      var box = list.getBoundingClientRect();
+      list.style.setProperty('--mx', (e.clientX - box.left).toFixed(0) + 'px');
+      list.style.setProperty('--my', (e.clientY - box.top).toFixed(0) + 'px');
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Flair · Shop by piece",
+  "tag": "div",
+  "class": "section flair-section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Shop by piece"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        { "type": "collection", "id": "collection", "label": "Collection" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flair · Shop by piece",
+      "blocks": [{ "type": "collection" }, { "type": "collection" }, { "type": "collection" }]
+    }
+  ]
+}
+{% endschema %}

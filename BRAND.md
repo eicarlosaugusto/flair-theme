@@ -14,9 +14,13 @@
 | Oxblood | #6E1F24 | Selo de promoção |
 
 ## Tipografia
-- Títulos: Bricolage Grotesque 700/800
-- Texto: Instrument Sans 400/600
-- Logo provisório: FLAIR em caixa alta, espaçado
+- Títulos: **Archivo** 800/900 (Google Fonts, largura variável). Títulos grandes condensados (`font-stretch: 72%`) em caixa alta.
+- Texto: **Geist** 400/500/600 (Google Fonts). Preços com números tabulares.
+- Logo provisório: FLAIR em Archivo expandida (`font-stretch: 125%`), caixa alta, espaçamento 0.34em.
+- Escala (px): 13 / 15 / 18 / 24 / 36 / 56 / 88 / 140. Texto corrido nunca abaixo de 15px.
+
+## Assinatura
+- "O brilho que segue você": faixa de luz que passa pelas fotos de produto seguindo o dedo/mouse (`assets/flair-shine.js`). Liga/desliga em Tema → Configurações → Flair.
 
 ## Regras de conteúdo
 - Só vender peças de **aço inoxidável** (a promessa da loja depende disso).

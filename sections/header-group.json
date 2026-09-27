@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Free tracked UK delivery on orders over \u00a335",
+            "text": "Free tracked UK delivery on orders over £35",
             "text_alignment": "center",
             "color_scheme": "scheme-3",
             "link": "shopify://pages/delivery"
@@ -31,13 +31,13 @@
     "header": {
       "type": "header",
       "settings": {
-        "color_scheme": "scheme-1",
-        "menu_color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
+        "menu_color_scheme": "scheme-3",
         "logo_position": "middle-center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
+        "show_line_separator": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "mobile_logo_position": "center",

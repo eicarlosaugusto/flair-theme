@@ -1,7 +1,7 @@
 # BRIEF: Redesign Flair Studio
 
 Método: skill `sites-incriveis` (entrevista → jornada → trava anti-repetição → construção → verificação).
-Status: **entrevista concluída. Aguardando "pode ir" para começar o código.**
+Status: **aprovado ("pode ir") e construído. Verificado com screenshots em desktop, celular e movimento reduzido.**
 
 ## Restrições fixas (não se mexe)
 - Produtos, variantes, preços, tags (`necklace`, `ring`, `bracelet`, `earrings`, `set`) e coleções: intactos.

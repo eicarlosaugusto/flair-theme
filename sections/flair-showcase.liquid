@@ -1,0 +1,112 @@
+{%- comment -%}
+  Flair: asymmetric showcase. The first piece is the hero of the grid; the rest
+  fall into a broken rhythm around it. Cards are the theme's own card-product,
+  so quick add, badges and prices behave exactly like the rest of the store.
+{%- endcomment -%}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.quick_add == 'standard' -%}
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<section class="flair-showcase color-{{ section.settings.color_scheme }}" aria-labelledby="FlairShowcase-{{ section.id }}">
+  <div class="page-width">
+    <header class="flair-showcase__head">
+      <h2 id="FlairShowcase-{{ section.id }}" class="flair-display flair-showcase__title" data-fx="subir">
+        {{- section.settings.title | escape -}}
+      </h2>
+      {%- if section.settings.collection != blank -%}
+        <a class="flair-arrow-link" href="{{ section.settings.collection.url }}" data-fx="surgir" data-fx-atraso="200">
+          {{- section.settings.link_label | escape }}
+          <span class="flair-arrow-link__count">({{ section.settings.collection.products_count }})</span>
+        </a>
+      {%- endif -%}
+    </header>
+
+    <ul class="flair-showcase__grid" role="list">
+      {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+        <li class="flair-showcase__item" data-fx="subir" data-fx-atraso="{{ forloop.index0 | modulo: 3 | times: 90 }}">
+          {% render 'card-product',
+            card_product: product,
+            media_aspect_ratio: 'square',
+            image_shape: 'default',
+            lazy_load: true,
+            show_secondary_image: true,
+            show_vendor: false,
+            show_rating: false,
+            skip_styles: true,
+            section_id: section.id,
+            quick_add: section.settings.quick_add,
+            product_view_context: 'collection'
+          %}
+        </li>
+      {%- else -%}
+        {%- for i in (1..5) -%}
+          <li class="flair-showcase__item">
+            {% render 'card-product', show_vendor: false, media_aspect_ratio: 'square', lazy_load: false, placeholder_image: 'product-apparel-1' %}
+          </li>
+        {%- endfor -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Flair · Showcase",
+  "tag": "div",
+  "class": "section flair-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Best sellers"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Link label",
+      "default": "View all"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 3,
+      "max": 11,
+      "step": 1,
+      "label": "Products to show",
+      "info": "The grid is drawn for 5, 7 or 11 pieces.",
+      "default": 7
+    },
+    {
+      "type": "select",
+      "id": "quick_add",
+      "label": "t:sections.featured-collection.settings.quick_add.label",
+      "options": [
+        { "value": "none", "label": "t:sections.featured-collection.settings.quick_add.options.option_1" },
+        { "value": "standard", "label": "t:sections.featured-collection.settings.quick_add.options.option_2" }
+      ],
+      "default": "standard"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flair · Showcase"
+    }
+  ]
+}
+{% endschema %}

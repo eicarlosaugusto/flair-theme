@@ -1,0 +1,39 @@
+{%- comment -%}
+  Flair: closing. One line, one button.
+{%- endcomment -%}
+<section class="flair-closing color-{{ section.settings.color_scheme }}" aria-labelledby="FlairClosing-{{ section.id }}">
+  <div class="page-width flair-closing__inner">
+    <h2 id="FlairClosing-{{ section.id }}" class="flair-display flair-closing__title" data-fx="subir">
+      {{- section.settings.heading | escape -}}
+    </h2>
+    {%- if section.settings.button_label != blank -%}
+      <a class="button flair-closing__cta" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}" data-fx="surgir" data-fx-atraso="250">
+        {{- section.settings.button_label | escape -}}
+      </a>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Flair · Closing",
+  "tag": "div",
+  "class": "section flair-section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Made to stay on." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop all" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flair · Closing"
+    }
+  ]
+}
+{% endschema %}

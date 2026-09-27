@@ -1,131 +1,134 @@
 {
   "sections": {
     "hero": {
-      "type": "image-with-text",
-      "blocks": {
-        "cap": {
-          "type": "caption",
-          "settings": {
-            "caption": "Everyday jewellery",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "h": {
-          "type": "heading",
-          "settings": {
-            "heading": "Steel that keeps its shine.",
-            "heading_size": "hxl"
-          }
-        },
-        "t": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Chains, rings and hoops made for everyday wear. Waterproof, won't tarnish, built to layer.</p>",
-            "text_style": "body"
-          }
-        },
-        "b": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop the collection",
-            "button_link": "shopify://collections/all",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "cap",
-        "h",
-        "t",
-        "b"
-      ],
+      "type": "flair-hero",
       "settings": {
         "image": "shopify://shop_images/Sd9f799327d014cc9910128d5b16fcc7bL.webp",
-        "height": "large",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "ambient",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-3",
-        "color_scheme": "scheme-3",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "eyebrow": "Everyday jewellery",
+        "heading": "Steel that keeps its shine.",
+        "text": "<p>Chains, rings and hoops made for everyday wear. Waterproof, won't tarnish, built to layer.</p>",
+        "button_label": "Shop the collection",
+        "button_link": "shopify://collections/all",
+        "color_scheme": "scheme-3"
       }
     },
-    "usp": {
-      "type": "multicolumn",
+    "proof": {
+      "type": "flair-proof",
       "blocks": {
-        "c1": {
-          "type": "column",
+        "s1": {
+          "type": "step",
           "settings": {
-            "title": "Built to last",
-            "text": "<p>Waterproof and tarnish-resistant. Wear it in the shower, at the gym, every day.</p>",
-            "link_label": "",
-            "link": ""
+            "word": "Shower",
+            "line": "Water doesn't touch the shine."
           }
         },
-        "c2": {
-          "type": "column",
+        "s2": {
+          "type": "step",
           "settings": {
-            "title": "Made to stack",
-            "text": "<p>Pieces picked to work together. Sets cost less than buying each piece on its own.</p>",
-            "link_label": "",
-            "link": ""
+            "word": "Gym",
+            "line": "Sweat won't turn it, or you, green."
           }
         },
-        "c3": {
-          "type": "column",
+        "s3": {
+          "type": "step",
           "settings": {
-            "title": "14-day returns",
-            "text": "<p>Changed your mind? Send it back within 14 days of delivery.</p>",
-            "link_label": "Returns policy",
-            "link": "shopify://pages/returns"
+            "word": "Sea",
+            "line": "Salt water, no drama."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "word": "Every day",
+            "line": "Waterproof. Won't tarnish. Made to stay on."
           }
         }
       },
       "block_order": [
-        "c1",
-        "c2",
-        "c3"
+        "s1",
+        "s2",
+        "s3",
+        "s4"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 56,
-        "padding_bottom": 40
+        "heading": "Wear it everywhere",
+        "product": "box-chain-necklace",
+        "color_scheme": "scheme-3"
+      }
+    },
+    "showcase": {
+      "type": "flair-showcase",
+      "settings": {
+        "title": "Best sellers",
+        "collection": "all",
+        "link_label": "View all",
+        "products_to_show": 7,
+        "quick_add": "standard",
+        "color_scheme": "scheme-1"
+      }
+    },
+    "guarantees": {
+      "type": "flair-guarantees",
+      "blocks": {
+        "g1": {
+          "type": "item",
+          "settings": {
+            "title": "Tracked UK delivery",
+            "text": "Free on orders over £35.",
+            "link": "shopify://pages/delivery"
+          }
+        },
+        "g2": {
+          "type": "item",
+          "settings": {
+            "title": "14-day returns",
+            "text": "From the day it arrives.",
+            "link": "shopify://pages/returns"
+          }
+        },
+        "g3": {
+          "type": "item",
+          "settings": {
+            "title": "VAT included",
+            "text": "The price you see is the price you pay."
+          }
+        },
+        "g4": {
+          "type": "item",
+          "settings": {
+            "title": "Secure checkout",
+            "text": "Encrypted checkout powered by Shopify."
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "label": "Why shop with Flair",
+        "color_scheme": "scheme-2"
       }
     },
     "categories": {
-      "type": "collection-list",
+      "type": "flair-categories",
       "blocks": {
         "n": {
-          "type": "featured_collection",
+          "type": "collection",
           "settings": {
             "collection": "necklaces"
           }
         },
         "r": {
-          "type": "featured_collection",
+          "type": "collection",
           "settings": {
             "collection": "rings"
           }
         },
         "e": {
-          "type": "featured_collection",
+          "type": "collection",
           "settings": {
             "collection": "earrings"
           }
@@ -138,15 +141,7 @@
       ],
       "settings": {
         "title": "Shop by piece",
-        "heading_size": "h1",
-        "image_ratio": "portrait",
-        "columns_desktop": 3,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "color_scheme": "scheme-1"
       }
     },
     "sets": {
@@ -178,74 +173,23 @@
       },
       "disabled": true
     },
-    "new": {
-      "type": "featured-collection",
+    "closing": {
+      "type": "flair-closing",
       "settings": {
-        "title": "Best sellers",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "padding_top": 48,
-        "padding_bottom": 48
-      }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "h": {
-          "type": "heading",
-          "settings": {
-            "heading": "First look at new drops",
-            "heading_size": "h1"
-          }
-        },
-        "p": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>New pieces and restocks, straight to your inbox. No spam.</p>"
-          }
-        },
-        "f": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "h",
-        "p",
-        "f"
-      ],
-      "settings": {
-        "color_scheme": "scheme-5",
-        "full_width": true,
-        "padding_top": 48,
-        "padding_bottom": 56
+        "heading": "Made to stay on.",
+        "button_label": "Shop all",
+        "button_link": "shopify://collections/all",
+        "color_scheme": "scheme-3"
       }
     }
   },
   "order": [
     "hero",
-    "usp",
+    "proof",
+    "showcase",
+    "guarantees",
     "categories",
     "sets",
-    "new",
-    "newsletter"
+    "closing"
   ]
 }

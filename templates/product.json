@@ -71,7 +71,7 @@
         "delivery_eta": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<p class=\"flair-eta\" data-min=\"8\" data-max=\"15\">Order today, estimated delivery <strong class=\"flair-eta__dates\">in 8\u201315 working days</strong>. Free tracked delivery over \u00a335.</p>\n<script>(function(){var el=document.currentScript.previousElementSibling;function add(d,n){d=new Date(d);while(n>0){d.setDate(d.getDate()+1);var w=d.getDay();if(w!==0&&w!==6)n--;}return d;}var f={day:'numeric',month:'short'};var now=new Date();var a=add(now,+el.dataset.min),b=add(now,+el.dataset.max);el.querySelector('.flair-eta__dates').textContent=a.toLocaleDateString('en-GB',f)+' \u2013 '+b.toLocaleDateString('en-GB',f);})();</script>"
+            "custom_liquid": "<p class=\"flair-eta\" data-min=\"8\" data-max=\"15\">Order today, estimated delivery <strong class=\"flair-eta__dates\">in 8–15 working days</strong>. Free tracked delivery over £35.</p>\n<script>(function(){var el=document.currentScript.previousElementSibling;function add(d,n){d=new Date(d);while(n>0){d.setDate(d.getDate()+1);var w=d.getDay();if(w!==0&&w!==6)n--;}return d;}var f={day:'numeric',month:'short'};var now=new Date();var a=add(now,+el.dataset.min),b=add(now,+el.dataset.max);el.querySelector('.flair-eta__dates').textContent=a.toLocaleDateString('en-GB',f)+' – '+b.toLocaleDateString('en-GB',f);})();</script>"
           }
         },
         "payments": {
@@ -107,7 +107,7 @@
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_position": "left",
-        "gallery_layout": "thumbnail_slider",
+        "gallery_layout": "stacked",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "cover",
@@ -161,7 +161,7 @@
           "settings": {
             "heading": "How long does delivery take?",
             "icon": "truck",
-            "row_content": "<p>Orders usually arrive in 8\u201315 working days with tracking. You'll get the tracking link by email once your order is dispatched. Delivery is free on orders over \u00a335.</p>",
+            "row_content": "<p>Orders usually arrive in 8–15 working days with tracking. You'll get the tracking link by email once your order is dispatched. Delivery is free on orders over £35.</p>",
             "page": ""
           }
         },
@@ -179,7 +179,7 @@
           "settings": {
             "heading": "Is it a good gift?",
             "icon": "heart",
-            "row_content": "<p>Yes. Most pieces are unisex, and every order includes a 14-day return window. Order early for birthdays and holidays, as delivery takes 8\u201315 working days.</p>",
+            "row_content": "<p>Yes. Most pieces are unisex, and every order includes a 14-day return window. Order early for birthdays and holidays, as delivery takes 8–15 working days.</p>",
             "page": ""
           }
         }
