@@ -75,6 +75,14 @@ Custo AliExpress aproximado por peça. Confirmar no DSers antes de repreçar.
 | Imperial Chain Necklace 5mm, 60cm | £27.99 | £3.43 | £12.94 (46%) | +£4.94 (18%) |
 | Imperial Chain Necklace 5mm, 70cm | £27.99 | £3.71 | £12.66 (45%) | +£4.66 (17%) |
 
+| Snake Chain Bracelet 2–4mm | £21.99 | £0.35–0.50 | £11.77 (54%) | +£3.77 (17%) |
+| Snake Chain Bracelet 6mm | £23.99 | £1.96 | £11.67 (49%) | +£3.67 (15%) |
+| Emperor Chain Bracelet 10mm | £27.99 | £3.79 | £12.58 (45%) | +£4.58 (16%) |
+| Möbius Cuff Bracelet | £29.99 | £4.81 | £12.92 (43%) | +£4.92 (16%) |
+| Statement Hoop Earrings 30–60mm | £28.99 | £3.51–4.45 | £12.60 (43%) | +£4.60 (16%) |
+| Faceted Dome Ring 6mm | £23.99 | £1.23 | £12.40 (52%) | +£4.40 (18%) |
+| Hollow Chain Ring | £27.99 | £3.99 | £12.38 (44%) | +£4.38 (16%) |
+
 Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8 fica positivo. Esse é o motivo do frete grátis em £35.
 
 ## 4. Frete e prazos exibidos
@@ -99,6 +107,24 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
   Aparece no rodapé ("5% off your first order") e é mostrado na mensagem de sucesso depois do cadastro (`sections/footer.liquid`, textos em `sections/footer-group.json`).
   Numa peça só, 5% tira ~£0.75–£1.50 do lucro; num pedido de £35+ o pedido segue positivo com o CPA de £8.
 - Instagram: https://www.instagram.com/studios.flair/ (`social_instagram_link` em `config/settings_data.json`). TikTok ainda vazio.
+
+## 6b. Só cor do aço (27/09)
+
+- Decisão do Carlos: **nada dourado, rosé, preto ou arco-íris**. Só o tom prateado natural do aço (menos desgaste).
+- Variações coloridas apagadas de todos os produtos; fotos douradas removidas (as ligadas às variações e as que o Carlos marcou).
+- Descrições dizem "Finish: silver tone, the natural colour of the steel". Import novo: apagar variações coloridas e checar as fotos antes de publicar.
+- Imports de 27/09: 7 publicados (pulseiras snake 2–4mm e 6mm, emperor 10mm, Möbius cuff, argolas 30–60mm, anel domo facetado, anel corrente). 18 em DRAFT por estilo (Viking/celta/turco, religiosos, Medusa, lobo), alegação de saúde ("anti anxiety"), opções sem descrição (A/B/C, 35 "styles") ou pulseira PVD dourada.
+
+## 6c. Lei no Reino Unido — estado em 27/09
+
+Feito: devolução alinhada às Consumer Contracts Regulations (redução por uso em vez de recusa; reembolso em 14 dias do recebimento **ou da prova de envio**; menção ao Consumer Rights Act após 30 dias), brincos com a exceção de higiene correta (só se lacrados), valor do frete (£2.99) na página de produto, sem avaliações falsas, sem "Best sellers" sem base, sem promessas absolutas, sem "silver/925".
+Pendente (Carlos):
+- Colar o texto novo de devolução em **Configurações → Políticas → Reembolso** (a API não tem permissão): o texto está em `docs/policies.md`.
+- **Identificação do vendedor** no site (Electronic Commerce Regulations 2002): nome legal, endereço geográfico e e-mail na página Contact ou em "Informações de contato" (Configurações → Políticas).
+- **VAT**: registro no HMRC desde a 1ª venda (vendedor de fora, pedidos ≤ £135) e número de VAT no site depois de registrar.
+- **Dados pessoais (UK GDPR)**: taxa anual do ICO; avaliar **representante no Reino Unido** (art. 27) por ser controlador fora do UK; banner de cookies ativo para o Reino Unido antes de ligar pixels de Meta/TikTok; na política de privacidade, citar o ICO como autoridade (hoje cita só a lista da UE).
+- **Segurança do produto**: pedir aos fornecedores laudo de níquel (REACH/EN1811), chumbo e cádmio. Brinco e anel ficam em contato prolongado com a pele.
+- Idioma da loja em inglês (os títulos das políticas aparecem em português no checkout).
 
 ## 7. SEO (27/09)
 

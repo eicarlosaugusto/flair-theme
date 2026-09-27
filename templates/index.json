@@ -132,11 +132,18 @@
           "settings": {
             "collection": "earrings"
           }
+        },
+        "b": {
+          "type": "collection",
+          "settings": {
+            "collection": "bracelets"
+          }
         }
       },
       "block_order": [
         "n",
         "r",
+        "b",
         "e"
       ],
       "settings": {
