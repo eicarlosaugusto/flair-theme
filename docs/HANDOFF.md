@@ -118,13 +118,13 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
 ## 6c. Lei no Reino Unido — estado em 27/09
 
 Feito: devolução alinhada às Consumer Contracts Regulations (redução por uso em vez de recusa; reembolso em 14 dias do recebimento **ou da prova de envio**; menção ao Consumer Rights Act após 30 dias), brincos com a exceção de higiene correta (só se lacrados), valor do frete (£2.99) na página de produto, sem avaliações falsas, sem "Best sellers" sem base, sem promessas absolutas, sem "silver/925".
-Pendente (Carlos):
+Pendente (Carlos) — em 27/09 ele confirmou que corrigiu a política de reembolso e os pontos legais:
 - Colar o texto novo de devolução em **Configurações → Políticas → Reembolso** (a API não tem permissão): o texto está em `docs/policies.md`.
 - **Identificação do vendedor** no site (Electronic Commerce Regulations 2002): nome legal, endereço geográfico e e-mail na página Contact ou em "Informações de contato" (Configurações → Políticas).
 - **VAT**: registro no HMRC desde a 1ª venda (vendedor de fora, pedidos ≤ £135) e número de VAT no site depois de registrar.
 - **Dados pessoais (UK GDPR)**: taxa anual do ICO; avaliar **representante no Reino Unido** (art. 27) por ser controlador fora do UK; banner de cookies ativo para o Reino Unido antes de ligar pixels de Meta/TikTok; na política de privacidade, citar o ICO como autoridade (hoje cita só a lista da UE).
 - **Segurança do produto**: pedir aos fornecedores laudo de níquel (REACH/EN1811), chumbo e cádmio. Brinco e anel ficam em contato prolongado com a pele.
-- Idioma da loja em inglês (os títulos das políticas aparecem em português no checkout).
+- ~~Idioma~~: a loja já é só inglês (idioma principal `en`). Títulos em português na API/admin seguem o idioma da conta do Carlos, não o do cliente. Menu da conta do cliente (Orders/Profile) e coleção `frontpage` ("Home page") traduzidos em 27/09.
 
 ## 7. SEO (27/09)
 
