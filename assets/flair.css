@@ -86,18 +86,12 @@ h1, h2, h3, h4, .h0, .h1, .h2, .h3, .hxl, .hxxl {
 .header__menu-item { font-size: 1.3rem; letter-spacing: 0.1em; text-transform: uppercase; }
 .announcement-bar__message { letter-spacing: 0.14em; text-transform: uppercase; font-size: 1.2rem; }
 
-/* ---------- Product photos: one stone plate for every image ----------
- * Supplier photos arrive on different whites; multiply melts them into Stone
- * so the catalogue reads as one collection without editing a single file. */
+/* ---------- Product photos ----------
+ * Photos keep their original colours; Stone only shows behind an image while it loads. */
 .flair-plate,
 .card__media .media,
 .product__media-item .media {
   background-color: var(--flair-stone);
-}
-.flair-plate img,
-.card__media .media img,
-.product__media-item .media img {
-  mix-blend-mode: multiply;
 }
 
 /* ---------- Signature: the shine ---------- */
@@ -197,8 +191,10 @@ h1, h2, h3, h4, .h0, .h1, .h2, .h3, .hxl, .hxxl {
 .flair-hero__media svg { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 @media screen and (max-width: 749px) {
-  .flair-hero__inner { gap: 2.4rem; padding-top: 1.6rem; padding-bottom: 4rem; min-height: auto; }
-  .flair-hero__media { order: -1; aspect-ratio: 1 / 1; width: auto; height: 30svh; justify-self: end; }
+  .flair-hero__inner { gap: 2rem; padding-top: 1.6rem; padding-bottom: 4rem; min-height: auto; }
+  .flair-hero__copy { gap: 1.6rem; }
+  .flair-hero__inner { padding-top: 0; }
+  .flair-hero__media { order: -1; aspect-ratio: 16 / 10; width: calc(100% + 3rem); max-height: none; margin: 0 -1.5rem; }
   .flair-hero__title { font-size: 5.4rem; }
   .flair-hero__text { font-size: 1.6rem; }
 }
