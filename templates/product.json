@@ -38,7 +38,7 @@
         "trust": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<ul class=\"flair-trust\">\n  <li>Stainless steel. Won't rust or turn your skin green.</li>\n  <li>Tracked delivery to UK addresses.</li>\n  <li>14-day returns from the day it arrives.</li>\n</ul>"
+            "custom_liquid": "<ul class=\"flair-trust\">\n  <li>Waterproof. Won't tarnish, rust or turn your skin green.</li>\n  <li>Tracked delivery to UK addresses.</li>\n  <li>14-day returns from the day it arrives.</li>\n</ul>"
           }
         },
         "tab_delivery": {
@@ -64,7 +64,7 @@
           "settings": {
             "heading": "Care",
             "icon": "check_mark",
-            "content": "<p>Stainless steel is made for everyday wear, water included. To keep the shine, wipe it with a soft cloth and keep it away from bleach and chlorine.</p>",
+            "content": "<p>Made for everyday wear, water included: shower, gym and swim. To keep the shine, wipe it with a soft cloth and keep it away from bleach and chlorine.</p>",
             "page": ""
           }
         }

@@ -2,6 +2,7 @@
 
 **Nicho:** joias de aço inoxidável, unissex, pegada streetwear. Mercado: Reino Unido.
 **Frase:** Steel that keeps its shine.
+**Tom:** não usar "stainless steel" em títulos, chamadas e anúncios. Falar em durável, à prova d'água, não escurece. O material aparece só na ficha técnica do produto.
 
 ## Cores
 | Nome | Hex | Uso |

@@ -6,7 +6,7 @@
         "cap": {
           "type": "caption",
           "settings": {
-            "caption": "Stainless steel jewellery",
+            "caption": "Everyday jewellery",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -62,8 +62,8 @@
         "c1": {
           "type": "column",
           "settings": {
-            "title": "Stainless steel",
-            "text": "<p>No plating that rubs off in a week. Wear it in the shower, at the gym, every day.</p>",
+            "title": "Built to last",
+            "text": "<p>Waterproof and tarnish-resistant. Wear it in the shower, at the gym, every day.</p>",
             "link_label": "",
             "link": ""
           }
