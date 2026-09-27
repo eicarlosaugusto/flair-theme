@@ -122,6 +122,8 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
 - Apagados a pedido: anel "anti anxiety", argolas ZS (A/B/C) e anel com 35 "styles".
 - 27/09: fotos revisadas pelo Carlos, 14 publicados. Relic no menu principal.
 - Coleção manual **The edit** (`the-edit`) só com peças Core: alimenta a vitrine da home e as sugestões do carrinho, para Relic e religiosos não aparecerem ali. Ao lançar peça Core de destaque, adicionar nela.
+- Necklaces, Rings e Bracelets estão em **ordem manual**: peças Core primeiro, Relic depois, religiosos por último. Produto novo entra no fim; reposicionar se for Core.
+- Menu principal sem "Contact" (quebrava em duas linhas no desktop); Contact segue no rodapé.
 - Medusa: só publicar se não lembrar o medalhão da Versace (borda grega).
 - As descrições da Relic foram escritas a partir do título do fornecedor, sem ver as fotos. Conferir se batem.
 
