@@ -85,12 +85,19 @@
           "settings": {
             "custom_liquid": "{% render 'flair-sticky-atc' %}"
           }
+        },
+        "size_guide": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign flair_sized = 'Ring,Necklace,Earrings' | split: ',' -%}\n{%- if flair_sized contains product.type -%}\n  <p class=\"flair-size-link\"><a href=\"/pages/size-guide\">Size guide</a></p>\n{%- endif -%}"
+          }
         }
       },
       "block_order": [
         "title",
         "price",
         "variant_picker",
+        "size_guide",
         "quantity_selector",
         "buy_buttons",
         "delivery_eta",

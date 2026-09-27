@@ -100,7 +100,16 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
   Numa peça só, 5% tira ~£0.75–£1.50 do lucro; num pedido de £35+ o pedido segue positivo com o CPA de £8.
 - Instagram: https://www.instagram.com/studios.flair/ (`social_instagram_link` em `config/settings_data.json`). TikTok ainda vazio.
 
-## 7. Pendências
+## 7. SEO (27/09)
+
+- Produtos: título/descrição de SEO e texto alternativo em todas as fotos dos 6 ativos.
+- Coleções Necklaces, Rings e Earrings: descrição de ~70 palavras (aparece no topo da coleção) + título/descrição de SEO próprios, sem "steel" e sem absolutos.
+- Página **/pages/size-guide** (anel US→UK, comprimentos de colar, hoops), no menu do rodapé e linkada na página de produto (anéis, colares, brincos) pelo bloco `size_guide` em `templates/product.json`.
+- Home: enquanto *Loja virtual → Preferências* não tiver título/descrição, o tema usa `flair_home_title` / `flair_home_description` (Tema → Configurações → Flair). Também vale para o compartilhamento em redes (`snippets/meta-tags.liquid`).
+- Decisões do Carlos pendentes: tirar do ar Bracelets, Sets & Stacks e "Página inicial" (vazias); página "Política de Privacidade — Protocolo: Nutrição e Treino" publicada no domínio; renomear a loja para "Flair Studio"; manter ou não "stainless steel" nos títulos de SEO dos produtos.
+- A fazer fora do código: Google Search Console (enviar `/sitemap.xml`), Google Merchant Center, apagar o CNAME `pt.` do Wix.
+
+## 8. Pendências
 
 - ~~Corrente "Imperial" 5mm~~ resolvida em 27/09: título, descrição, SEO, tags (`necklace` → coleção Necklaces), handle `imperial-chain-necklace` e preço £27.99 pela fórmula; ativa e publicada na loja virtual.
 - Figaro (não é inox) e "Square Pearl Buddha chain" em rascunho: trocar ou decidir.

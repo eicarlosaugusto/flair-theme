@@ -4,6 +4,15 @@
   assign og_type = 'website'
   assign og_description = page_description | default: shop.description | default: shop.name
 
+  if request.page_type == 'index'
+    if page_title == blank or page_title == shop.name
+      assign og_title = settings.flair_home_title | default: og_title
+    endif
+    if page_description == blank
+      assign og_description = settings.flair_home_description | default: og_description
+    endif
+  endif
+
   if request.page_type == 'product'
     assign og_type = 'product'
   elsif request.page_type == 'article'

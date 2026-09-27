@@ -483,6 +483,9 @@ a.flair-guarantees__title:hover { text-decoration: underline; text-underline-off
 .product__media-list .product__media-item { margin-bottom: 0.8rem; }
 .product-form__submit { min-height: 5.6rem; }
 
+.flair-size-link { margin: -0.8rem 0 1.6rem; font-size: 1.4rem; }
+.flair-size-link a { color: inherit; text-underline-offset: 0.3rem; }
+
 /* Product trust list */
 .flair-trust { list-style: none; padding: 0; margin: 1.6rem 0 0; display: grid; gap: 0.8rem; font-size: 1.4rem; }
 .flair-trust li { display: flex; gap: 1rem; align-items: baseline; }

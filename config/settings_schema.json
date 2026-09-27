@@ -1480,6 +1480,24 @@
         "label": "Shine on product images",
         "info": "A soft band of light follows the finger or cursor across product photos. Turned off automatically for visitors who prefer reduced motion.",
         "default": true
+      },
+      {
+        "type": "header",
+        "content": "Homepage SEO"
+      },
+      {
+        "type": "text",
+        "id": "flair_home_title",
+        "label": "Homepage title",
+        "info": "Used only while Online Store > Preferences has no homepage title.",
+        "default": "Flair Studio | Everyday Jewellery for Men & Women, UK"
+      },
+      {
+        "type": "textarea",
+        "id": "flair_home_description",
+        "label": "Homepage meta description",
+        "info": "Used only while Online Store > Preferences has no homepage description. About 150 characters.",
+        "default": "Waterproof, tarnish-resistant chains, rings and hoops made for everyday wear. Unisex, from £14.99. Free tracked UK delivery over £35."
       }
     ]
   }
