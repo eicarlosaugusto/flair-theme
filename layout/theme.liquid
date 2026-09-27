@@ -285,6 +285,14 @@
     {{ 'flair.css' | asset_url | stylesheet_tag }}
     {{ 'sites-incriveis.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'sites-incriveis.js' | asset_url }}" defer="defer"></script>
+    <script>
+      // If the animation script never starts (blocked, failed), show everything unanimated.
+      setTimeout(function () {
+        var root = document.documentElement;
+        if (!root.classList.contains('fx-pronto')) root.classList.add('fx-reduzido');
+      }, 3000);
+    </script>
+    <noscript><style>[data-fx], [data-fx] .fx-palavra { opacity: 1 !important; transform: none !important; }</style></noscript>
     {%- if settings.flair_shine -%}
       <script src="{{ 'flair-shine.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}

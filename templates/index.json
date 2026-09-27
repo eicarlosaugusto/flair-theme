@@ -19,14 +19,14 @@
           "type": "step",
           "settings": {
             "word": "Shower",
-            "line": "Water doesn't touch the shine."
+            "line": "Waterproof, so the shine stays."
           }
         },
         "s2": {
           "type": "step",
           "settings": {
             "word": "Gym",
-            "line": "Sweat won't turn it, or you, green."
+            "line": "Built for sweat. Made not to turn green."
           }
         },
         "s4": {
@@ -59,7 +59,7 @@
     "showcase": {
       "type": "flair-showcase",
       "settings": {
-        "title": "Best sellers",
+        "title": "The edit",
         "collection": "all",
         "link_label": "View all",
         "products_to_show": 5,

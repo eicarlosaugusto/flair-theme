@@ -1,0 +1,38 @@
+{%- comment -%}
+  Cart drawer: while the cart is under the free delivery threshold, suggest up to
+  three pieces not already in it. Links go to the product page so the shopper
+  picks the right length, size or colour.
+{%- endcomment -%}
+{%- assign flair_threshold = 3500 -%}
+{%- if cart.item_count > 0 and cart.total_price < flair_threshold -%}
+  {%- assign in_cart = cart.items | map: 'product_id' | join: ',' | prepend: ',' | append: ',' -%}
+  {%- assign shown = 0 -%}
+  {%- capture picks -%}
+    {%- for product in collections['all'].products -%}
+      {%- if shown >= 3 -%}{%- break -%}{%- endif -%}
+      {%- assign key = ',' | append: product.id | append: ',' -%}
+      {%- if in_cart contains key or product.available == false -%}{%- continue -%}{%- endif -%}
+      {%- assign shown = shown | plus: 1 -%}
+      <li class="flair-picks__item">
+        <a class="flair-picks__link" href="{{ product.url }}">
+          <span class="flair-picks__thumb flair-plate">
+            {%- if product.featured_media -%}
+              {{ product.featured_media | image_url: width: 160 | image_tag: loading: 'lazy', width: 80, height: 80, alt: '' }}
+            {%- endif -%}
+          </span>
+          <span class="flair-picks__title">{{ product.title | escape }}</span>
+          <span class="flair-picks__price">
+            {%- if product.price_varies -%}From {% endif -%}
+            {{- product.price_min | money -}}
+          </span>
+        </a>
+      </li>
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- if shown > 0 -%}
+    <div class="flair-picks">
+      <p class="flair-picks__label">Complete your stack</p>
+      <ul class="flair-picks__list" role="list">{{ picks }}</ul>
+    </div>
+  {%- endif -%}
+{%- endif -%}

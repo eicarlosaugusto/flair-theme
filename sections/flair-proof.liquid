@@ -5,7 +5,7 @@
 {%- liquid
   assign steps = section.blocks | where: 'type', 'step'
   assign step_count = steps.size | at_least: 1 | at_most: 5
-  assign scene_height = step_count | plus: 1
+  assign scene_height = step_count | at_least: 2
   assign piece = section.settings.product
   assign piece_image = section.settings.image | default: piece.featured_media.preview_image
 -%}
@@ -120,8 +120,8 @@
     {
       "name": "Flair · Proof",
       "blocks": [
-        { "type": "step", "settings": { "word": "Shower", "line": "Water doesn't touch the shine." } },
-        { "type": "step", "settings": { "word": "Gym", "line": "Sweat won't turn it, or you, green." } },
+        { "type": "step", "settings": { "word": "Shower", "line": "Waterproof, so the shine stays." } },
+        { "type": "step", "settings": { "word": "Gym", "line": "Built for sweat. Made not to turn green." } },
         { "type": "step", "settings": { "word": "Rain", "line": "British weather, handled." } },
         { "type": "step", "settings": { "word": "Every day", "line": "Waterproof. Tarnish-resistant. Made to stay on." } }
       ]
