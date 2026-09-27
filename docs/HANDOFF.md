@@ -158,9 +158,10 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
 - Medidas tiradas das fotos do fornecedor: Lock Chain colar 45cm, Rolo Choker 40cm. Já nas descrições.
 - Opções dos produtos limpas (antes vinham com o texto do fornecedor: "Main Stone Color: As shown", "R1283-Texture", "PaperclinChain"...). Nomes claros (Size (US), Length, Width, Diameter, Stone, Style, Type, Chain, Pattern, Finish) e valores em ordem crescente. Só nome e ordem mudaram: os IDs das variantes são os mesmos, então o DSers segue mapeado.
 - Opção com um só valor (ex.: "Finish: Steel") fica escondida na página de produto (`snippets/product-variant-picker.liquid`), mas continua no carrinho e no pedido.
-- Cross Pendant: valores "02S / 01S / Steel color" sem significado claro no fornecedor. Conferir no DSers qual é qual e renomear.
+- Cross Pendant: pela foto de cada variante, "02S" era uma corrente paperclip sem pingente e "01S" um coração com "M". Apagadas as duas variantes e as fotos; ficou só a cruz.
+- Rolo Choker: "necklace 1" = corrente rolo (elo redondo), "necklace 2" = corrente cable (elo oval). Opção "Chain" renomeada e descrição atualizada.
 - Import novo: renomear opções e ordenar tamanhos antes de publicar.
-- **Crown Ring with Green Stone tem detalhes dourados em todas as fotos** (peça bicolor). Contraria a regra "só cor do aço": decidir se sai.
+- Crown Ring with Green Stone: peça bicolor (detalhes dourados em todas as fotos). Posta em DRAFT pela regra "só cor do aço".
 
 ## 6c. Lei no Reino Unido — estado em 27/09
 
