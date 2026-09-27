@@ -119,12 +119,6 @@
             "collection": "rings"
           }
         },
-        "b": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "bracelets"
-          }
-        },
         "e": {
           "type": "featured_collection",
           "settings": {
@@ -135,14 +129,13 @@
       "block_order": [
         "n",
         "r",
-        "b",
         "e"
       ],
       "settings": {
         "title": "Shop by piece",
         "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "color_scheme": "scheme-1",
         "show_view_all": false,
         "columns_mobile": "2",
@@ -177,7 +170,8 @@
         "columns_mobile": "2",
         "padding_top": 48,
         "padding_bottom": 48
-      }
+      },
+      "disabled": true
     },
     "new": {
       "type": "featured-collection",
@@ -245,7 +239,6 @@
     "hero",
     "usp",
     "categories",
-    "sets",
     "new",
     "newsletter"
   ]
