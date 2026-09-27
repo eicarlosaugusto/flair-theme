@@ -72,6 +72,8 @@ Custo AliExpress aproximado por peça. Confirmar no DSers antes de repreçar.
 | Black Stone Signet Ring | £29.99 | ~£9.43 | £8.30 (28%) | +£0.30 |
 | Textured Band Ring | £18.99 | ~£3.61 | £6.61 (35%) | −£1.39 |
 | Huggie Hoop Earrings | £14.99 | ~£1.40 | £6.08 (41%) | −£1.92 |
+| Imperial Chain Necklace 5mm, 60cm | £27.99 | £3.43 | £12.94 (46%) | +£4.94 (18%) |
+| Imperial Chain Necklace 5mm, 70cm | £27.99 | £3.71 | £12.66 (45%) | +£4.66 (17%) |
 
 Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8 fica positivo. Esse é o motivo do frete grátis em £35.
 
@@ -91,9 +93,16 @@ Pedido de 2 peças (ex.: £37.98, 2 × £2.70 de frete) com um único CPA de £8
 - **Nada de avaliações falsas** (ilegal no Reino Unido pelo DMCC Act). Avaliações reais só via Judge.me (ainda não instalado).
 - Devolução: 14 dias a partir da entrega. Páginas `/pages/returns` e `/pages/delivery`.
 
-## 6. Pendências
+## 6. Oferta de boas-vindas e redes
 
-- Corrente "Imperial" 5mm (import de 27/09) em DRAFT: reescrever título, descrição e preço antes de ativar.
+- Código **WELCOME5**: 5% em tudo, uma vez por cliente, não acumula com outros descontos, sem data de fim.
+  Aparece no rodapé ("5% off your first order") e é mostrado na mensagem de sucesso depois do cadastro (`sections/footer.liquid`, textos em `sections/footer-group.json`).
+  Numa peça só, 5% tira ~£0.75–£1.50 do lucro; num pedido de £35+ o pedido segue positivo com o CPA de £8.
+- Instagram: https://www.instagram.com/studios.flair/ (`social_instagram_link` em `config/settings_data.json`). TikTok ainda vazio.
+
+## 7. Pendências
+
+- ~~Corrente "Imperial" 5mm~~ resolvida em 27/09: título, descrição, SEO, tags (`necklace` → coleção Necklaces), handle `imperial-chain-necklace` e preço £27.99 pela fórmula; ativa e publicada na loja virtual.
 - Figaro (não é inox) e "Square Pearl Buddha chain" em rascunho: trocar ou decidir.
 - Importar pulseira e corrente cubana para montar kits, e reativar a seção `sets` da home (está `disabled` em `templates/index.json`).
 - Fazer um pedido de teste completo.
