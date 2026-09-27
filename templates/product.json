@@ -71,7 +71,7 @@
         "delivery_eta": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<p class=\"flair-eta\" data-min=\"8\" data-max=\"15\">Order today, estimated delivery <strong class=\"flair-eta__dates\">in 8–15 working days</strong>. Free tracked delivery over £35.</p>\n<script>(function(){var el=document.currentScript.previousElementSibling;function add(d,n){d=new Date(d);while(n>0){d.setDate(d.getDate()+1);var w=d.getDay();if(w!==0&&w!==6)n--;}return d;}var f={day:'numeric',month:'short'};var now=new Date();var a=add(now,+el.dataset.min),b=add(now,+el.dataset.max);el.querySelector('.flair-eta__dates').textContent=a.toLocaleDateString('en-GB',f)+' – '+b.toLocaleDateString('en-GB',f);})();</script>"
+            "custom_liquid": "<p class=\"flair-eta\" data-min=\"8\" data-max=\"15\">Order today, estimated delivery <strong class=\"flair-eta__dates\">in 8–15 working days</strong>. Tracked delivery £2.99, free over £35.</p>\n<script>(function(){var el=document.currentScript.previousElementSibling;function add(d,n){d=new Date(d);while(n>0){d.setDate(d.getDate()+1);var w=d.getDay();if(w!==0&&w!==6)n--;}return d;}var f={day:'numeric',month:'short'};var now=new Date();var a=add(now,+el.dataset.min),b=add(now,+el.dataset.max);el.querySelector('.flair-eta__dates').textContent=a.toLocaleDateString('en-GB',f)+' – '+b.toLocaleDateString('en-GB',f);})();</script>"
           }
         },
         "payments": {
