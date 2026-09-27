@@ -1,0 +1,14 @@
+{%- comment -%} Barra de frete grátis. Limite em pence: 3500 = £35 {%- endcomment -%}
+{%- assign flair_threshold = 3500 -%}
+{%- if cart.item_count > 0 -%}
+  {%- assign flair_remaining = flair_threshold | minus: cart.total_price -%}
+  {%- assign flair_pct = cart.total_price | times: 100 | divided_by: flair_threshold | at_most: 100 -%}
+  <div class="flair-ship" role="status">
+    {%- if flair_remaining > 0 -%}
+      <p class="flair-ship__text">You're <strong>{{ flair_remaining | money }}</strong> away from free tracked delivery</p>
+    {%- else -%}
+      <p class="flair-ship__text"><strong>Free tracked delivery</strong> unlocked</p>
+    {%- endif -%}
+    <div class="flair-ship__track" aria-hidden="true"><span style="width: {{ flair_pct }}%"></span></div>
+  </div>
+{%- endif -%}

@@ -1,0 +1,29 @@
+{%- comment -%} Barra fixa de compra no celular. Aparece quando o botão principal sai da tela. {%- endcomment -%}
+<div class="flair-sticky" id="FlairSticky" hidden>
+  <div class="flair-sticky__info">
+    <span class="flair-sticky__title">{{ product.title }}</span>
+    <span class="flair-sticky__price" id="FlairStickyPrice">{{ product.selected_or_first_available_variant.price | money }}</span>
+  </div>
+  <button type="button" class="button flair-sticky__btn" id="FlairStickyBtn">Add to cart</button>
+</div>
+<script>
+  (function () {
+    var bar = document.getElementById('FlairSticky');
+    var main = document.querySelector('product-form button[name="add"]');
+    if (!bar || !main || !('IntersectionObserver' in window)) return;
+    var btn = document.getElementById('FlairStickyBtn');
+    var price = document.getElementById('FlairStickyPrice');
+    function sync() {
+      btn.disabled = main.disabled;
+      btn.textContent = main.disabled ? 'Sold out' : 'Add to cart';
+      var p = document.querySelector('.product__info-container .price-item--last, .product__info-container .price-item--regular');
+      if (p && p.textContent.trim()) price.textContent = p.textContent.trim();
+    }
+    new IntersectionObserver(function (e) {
+      bar.hidden = e[0].isIntersecting;
+      sync();
+    }).observe(main);
+    new MutationObserver(sync).observe(main, { attributes: true, childList: true, subtree: true });
+    btn.addEventListener('click', function () { main.click(); });
+  })();
+</script>

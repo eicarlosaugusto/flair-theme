@@ -38,7 +38,7 @@
         "trust": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<ul class=\"flair-trust\">\n  <li>Waterproof. Won't tarnish, rust or turn your skin green.</li>\n  <li>Tracked delivery to UK addresses.</li>\n  <li>14-day returns from the day it arrives.</li>\n</ul>"
+            "custom_liquid": "<ul class=\"flair-trust\">\n  <li>Waterproof and tarnish-resistant. Won't rust or turn your skin green.</li>\n  <li>Tracked delivery to UK addresses.</li>\n  <li>14-day returns from the day it arrives.</li>\n</ul>"
           }
         },
         "tab_delivery": {
@@ -67,6 +67,24 @@
             "content": "<p>Made for everyday wear, water included: shower, gym and swim. To keep the shine, wipe it with a soft cloth and keep it away from bleach and chlorine.</p>",
             "page": ""
           }
+        },
+        "delivery_eta": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"flair-eta\" data-min=\"8\" data-max=\"15\">Order today, estimated delivery <strong class=\"flair-eta__dates\">in 8\u201315 working days</strong>. Free tracked delivery over \u00a335.</p>\n<script>(function(){var el=document.currentScript.previousElementSibling;function add(d,n){d=new Date(d);while(n>0){d.setDate(d.getDate()+1);var w=d.getDay();if(w!==0&&w!==6)n--;}return d;}var f={day:'numeric',month:'short'};var now=new Date();var a=add(now,+el.dataset.min),b=add(now,+el.dataset.max);el.querySelector('.flair-eta__dates').textContent=a.toLocaleDateString('en-GB',f)+' \u2013 '+b.toLocaleDateString('en-GB',f);})();</script>"
+          }
+        },
+        "payments": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"flair-pay\"><span class=\"flair-pay__label\">Secure checkout</span><ul class=\"list-payment\" role=\"list\">{%- for type in shop.enabled_payment_types -%}<li class=\"list-payment__item\">{{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}</li>{%- endfor -%}</ul></div>"
+          }
+        },
+        "sticky": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'flair-sticky-atc' %}"
+          }
         }
       },
       "block_order": [
@@ -75,12 +93,15 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "delivery_eta",
+        "payments",
         "trust",
         "description",
         "tab_delivery",
         "tab_returns",
         "tab_care",
-        "share"
+        "share",
+        "sticky"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -108,7 +129,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Complete the look",
         "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
@@ -122,11 +143,74 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "q1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will it tarnish or turn my skin green?",
+            "icon": "check_mark",
+            "row_content": "<p>Our pieces are made for everyday wear, including the shower and the gym. They're tarnish-resistant and won't rust or leave a green mark. For gold and coloured finishes, keep them away from chlorine and harsh chemicals so the colour lasts longer. The exact material is listed in each product's details.</p>",
+            "page": ""
+          }
+        },
+        "q2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does delivery take?",
+            "icon": "truck",
+            "row_content": "<p>Orders usually arrive in 8\u201315 working days with tracking. You'll get the tracking link by email once your order is dispatched. Delivery is free on orders over \u00a335.</p>",
+            "page": ""
+          }
+        },
+        "q3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if it doesn't fit or I change my mind?",
+            "icon": "return",
+            "row_content": "<p>You have 14 days from delivery to tell us, then 14 more days to send it back unworn for a refund. Ring sizes are listed in US sizing with a UK conversion in each ring's description.</p>",
+            "page": ""
+          }
+        },
+        "q4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it a good gift?",
+            "icon": "heart",
+            "row_content": "<p>Yes. Most pieces are unisex, and every order includes a 14-day return window. Order early for birthdays and holidays, as delivery takes 8\u201315 working days.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Questions",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "scheme-1",
+        "container_color_scheme": "scheme-2",
+        "open_first_collapsible_row": false,
+        "image": "",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "disclosures",
+    "faq",
     "related-products"
   ]
 }
